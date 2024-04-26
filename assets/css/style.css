@@ -1596,16 +1596,16 @@ section {
   color: #fff;
 }
 
-.contact .php-email-form {
+.contact .pure-form {
   width: 100%;
   background: #fff;
 }
 
-.contact .php-email-form .form-group {
+.contact .pure-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
+.contact .pure-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1614,11 +1614,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .pure-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .pure-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1627,14 +1627,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .pure-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .pure-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1646,28 +1646,28 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .pure-form input,
+.contact .pure-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 4px;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .pure-form input:focus,
+.contact .pure-form textarea:focus {
   border-color: #2487ce;
 }
 
-.contact .php-email-form input {
+.contact .pure-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .pure-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .pure-form button[type=submit] {
   background: #2487ce;
   border: 0;
   padding: 10px 30px;
@@ -1676,7 +1676,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .pure-form button[type=submit]:hover {
   background: #3194db;
 }
 
