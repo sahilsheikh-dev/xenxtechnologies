@@ -1,9 +1,9 @@
 import { Image, List, ListItem } from '@chakra-ui/react';
 import React from 'react';
-import Client1 from '../../../assets/images/client1.png';
-import Client2 from '../../../assets/images/client2.png';
-import Client3 from '../../../assets/images/client3.png';
-import Client4 from '../../../assets/images/client4.png';
+import Client1 from '../../../assets/images/client/client1.png';
+import Client2 from '../../../assets/images/client/client2.png';
+import Client3 from '../../../assets/images/client/client3.png';
+import Client4 from '../../../assets/images/client/client4.png';
 
 const ClientsLogos = ({ theme }) => {
   return (

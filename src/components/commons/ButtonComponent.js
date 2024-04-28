@@ -1,7 +1,7 @@
 import { Button } from '@chakra-ui/react';
 import React from 'react';
 
-const ButtonComponent = ({ text, icon }) => {
+const ButtonComponent = ({ text, icon, onClickFuntion }) => {
   return (
     <Button
       mt={6}
@@ -11,6 +11,7 @@ const ButtonComponent = ({ text, icon }) => {
       textColor={'#FAFAFA'}
       _hover={{ color: '#F71C0B', bg: '#FAFAFA', border: '1px solid #F71C0B' }}
       p={6}
+      onClick={onClickFuntion}
     >
       {text}
     </Button>

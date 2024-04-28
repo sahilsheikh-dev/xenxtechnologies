@@ -68,7 +68,7 @@ const Header = ({ themeToggler, theme }) => {
               _hover={{ color: '#F71C0B' }}
               color={pageName === '/' ? '#F71C0B' : ''}
             >
-              <Link to={'/Homepage'}>Home</Link>
+              <Link to={'/'}>Home</Link>
             </Text>
             <Text
               fontWeight={'semibold'}

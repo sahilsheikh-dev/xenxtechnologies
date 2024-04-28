@@ -8,6 +8,10 @@ import ClientsLogos from './HeroSection/ClientsLogos';
 // import HeroAnimation from './HeroSection/HeroAnimation';
 
 const HeroSection = ({ theme }) => {
+  const onClickFuntion = () => {
+    window.location.href = '/Contact';
+  };
+
   return (
     <>
       <Stack
@@ -56,6 +60,7 @@ const HeroSection = ({ theme }) => {
               <ButtonComponent
                 text={'Contact Us'}
                 icon={<ChevronRightIcon />}
+                onClickFuntion={onClickFuntion}
               />
               <Box
                 display={{
