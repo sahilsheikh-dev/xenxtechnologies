@@ -29,11 +29,11 @@ const Footer = ({ theme }) => {
         >
           <Text as={'h1'} fontWeight={'bold'}>Xenx Technologies</Text>
           <List >
-            <ListItem me={3} display={'inline-block'}><a href="https://linkedin.com/xenxtechnologies" target='_blank' _hover={{ color: '#F71C0B' }}><BsLinkedin fontSize={'20px'} /></a></ListItem>
-            <ListItem me={3} display={'inline-block'}><a href="https://twitter.com/xenxtechnologies" target='_blank' _hover={{ color: '#F71C0B' }}><BsTwitter fontSize={'20px'} /></a></ListItem>
-            <ListItem me={3} display={'inline-block'}><a href="https://instagram.com/xenxtechnologies" target='_blank' _hover={{ color: '#F71C0B' }}><BsInstagram fontSize={'20px'} /></a></ListItem>
-            <ListItem me={3} display={'inline-block'}><a href="https://youtube.com/xenxtechnologies" target='_blank' _hover={{ color: '#F71C0B' }}><BsYoutube fontSize={'20px'} /></a></ListItem>
-            <ListItem me={3} display={'inline-block'}><a href="https://faceboot.com/xenxtechnologies" target='_blank' _hover={{ color: '#F71C0B' }}><BsFacebook fontSize={'20px'} /></a></ListItem>
+            <ListItem me={3} display={'inline-block'}><a href="https://linkedin.com/xenxtechnologies" target='_blank' rel="noreferrer" _hover={{ color: '#F71C0B' }}><BsLinkedin fontSize={'20px'} /></a></ListItem>
+            <ListItem me={3} display={'inline-block'}><a href="https://twitter.com/xenxtechnologies" target='_blank' rel="noreferrer" _hover={{ color: '#F71C0B' }}><BsTwitter fontSize={'20px'} /></a></ListItem>
+            <ListItem me={3} display={'inline-block'}><a href="https://instagram.com/xenxtechnologies" target='_blank' rel="noreferrer" _hover={{ color: '#F71C0B' }}><BsInstagram fontSize={'20px'} /></a></ListItem>
+            <ListItem me={3} display={'inline-block'}><a href="https://youtube.com/xenxtechnologies" target='_blank' rel="noreferrer" _hover={{ color: '#F71C0B' }}><BsYoutube fontSize={'20px'} /></a></ListItem>
+            <ListItem me={3} display={'inline-block'}><a href="https://faceboot.com/xenxtechnologies" target='_blank' rel="noreferrer" _hover={{ color: '#F71C0B' }}><BsFacebook fontSize={'20px'} /></a></ListItem>
           </List>
         </GridItem>
         <GridItem w="100%" colSpan={2}>
