@@ -21,7 +21,7 @@ const SectionHeading = ({
         <Text
           as={'span'}
           fontWeight={'semibold'}
-          color={theme === 'light' ? '#010101' : '#F2F2F2'}
+          color={theme === 'light' ? '#010101' : '#FAFAFA'}
         >
           {highligtedText + ' '}
           <Text as={'p'} display={{ base: 'none', md: 'block' }}></Text>

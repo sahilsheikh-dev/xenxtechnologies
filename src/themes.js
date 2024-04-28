@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import '@fontsource/montserrat';
 
 export const lightTheme = {
-  body: '#F2F2F2',
+  body: '#FAFAFA',
   text: '#000000',
   borderColor: 'rgb(0, 0, 0, 0.7)',
   bgSecondary: '#F5F5F5',

@@ -75,7 +75,12 @@ const HeroSection = ({ theme }) => {
               </Box>
             </GridItem>
             <GridItem w="100%">
-              <Image mx={'auto'} w={'90%'} src={HeroImage} alt="Hero Image" />
+              <Image
+                mx={'auto'}
+                maxH={'500px'}
+                src={HeroImage}
+                alt="Hero Image"
+              />
             </GridItem>
           </Grid>
           <Box

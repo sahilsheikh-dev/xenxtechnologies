@@ -10,13 +10,23 @@ const ServiceCard = ({
   return (
     <>
       <Stack
-        bg="radial-gradient(circle at 100% 100%, #010101 0, #010101 7px, transparent 7px) 0% 0%/10px 10px no-repeat,
-        radial-gradient(circle at 0 100%, #010101 0, #010101 7px, transparent 7px) 100% 0%/10px 10px no-repeat,
-        radial-gradient(circle at 100% 0, #010101 0, #010101 7px, transparent 7px) 0% 100%/10px 10px no-repeat,
-        radial-gradient(circle at 0 0, #010101 0, #010101 7px, transparent 7px) 100% 100%/10px 10px no-repeat,
-        linear-gradient(#010101, #010101) 50% 50%/calc(100% - 6px) calc(100% - 20px) no-repeat,
-        linear-gradient(#010101, #010101) 50% 50%/calc(100% - 20px) calc(100% - 6px) no-repeat,
-        linear-gradient(150deg, #010101 0%, #f71c0b 100%)"
+        bg={
+          theme === 'dark'
+            ? `radial-gradient(circle at 100% 100%, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 0% 0%/10px 10px no-repeat,
+      radial-gradient(circle at 0 100%, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 100% 0%/10px 10px no-repeat,
+      radial-gradient(circle at 100% 0, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 0% 100%/10px 10px no-repeat,
+      radial-gradient(circle at 0 0, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 100% 100%/10px 10px no-repeat,
+      linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)) 50% 50%/calc(100% - 6px) calc(100% - 20px) no-repeat,
+      linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)) 50% 50%/calc(100% - 20px) calc(100% - 6px) no-repeat,
+      linear-gradient(131deg, #010101 25%, #f71c0b 100%)`
+            : `radial-gradient(circle at 100% 100%, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 0% 0%/10px 10px no-repeat,
+        radial-gradient(circle at 0 100%, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 100% 0%/10px 10px no-repeat,
+        radial-gradient(circle at 100% 0, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 0% 100%/10px 10px no-repeat,
+        radial-gradient(circle at 0 0, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 100% 100%/10px 10px no-repeat,
+        linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)) 50% 50%/calc(100% - 6px) calc(100% - 20px) no-repeat,
+        linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)) 50% 50%/calc(100% - 20px) calc(100% - 6px) no-repeat,
+        linear-gradient(131deg, #fafafa 25%, #f71c0b 100%)`
+        }
         boxSizing="border-box"
         borderRadius={'15px'}
         p={6}

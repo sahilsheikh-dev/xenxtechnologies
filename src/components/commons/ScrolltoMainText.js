@@ -8,7 +8,7 @@ const ScrolltoMainText = ({ title, theme }) => {
         fontSize={{ base: '20px', md: '40px' }}
         fontFamily={'Montserrat'}
         fontWeight={'bold'}
-        color={theme === 'light' ? '#010101' : '#F2F2F2'}
+        color={theme === 'light' ? '#010101' : '#FAFAFA'}
         mt={20}
       >
         <a

@@ -22,7 +22,7 @@ const Header = ({ themeToggler, theme }) => {
           width: '100%',
           opacity: '0.9',
           padding: '10px 0',
-          background: theme === 'light' ? '#F2F2F2' : '#010101',
+          background: theme === 'light' ? '#FAFAFA' : '#010101',
           zIndex: '99',
         }}
       >
