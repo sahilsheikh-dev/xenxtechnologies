@@ -9,9 +9,9 @@ import ServiceImg4 from '../../assets/images/service/service-img4.png';
 // import { ChevronRightIcon } from '@chakra-ui/icons';
 
 const ServiceSection = ({ theme }) => {
-  const onClickFuntion = () => {
-    window.location.href = '/Service';
-  };
+  // const onClickFuntion = () => {
+  //   window.location.href = '/Service';
+  // };
 
   return (
     <>
