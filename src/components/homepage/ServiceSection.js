@@ -17,7 +17,7 @@ const ServiceSection = ({ theme }) => {
     <>
       <Stack
         direction={{ base: 'column', md: 'row' }}
-        width={{ base: 'full', md: 'auto' }}
+        // width={{ base: 'full', md: 'auto' }}
         my={12}
       >
         <Box
@@ -25,7 +25,6 @@ const ServiceSection = ({ theme }) => {
           mx={{ base: 1, md: 16, lg: 16, xl: 16 }}
           mt={0}
           py={0}
-          w={'100%'}
         >
           <Grid
             templateColumns={{
@@ -34,15 +33,13 @@ const ServiceSection = ({ theme }) => {
               lg: 'repeat(2, 1fr)',
               xl: 'repeat(2, 1fr)',
             }}
-            gap={6}
-            // alignItems="center"
             textAlign={{ base: 'center', md: 'left', lg: 'left', xl: 'left' }}
+            gap={2}
           >
-            <GridItem w="100%">
+            <GridItem mx={0} px={0} mb={{ base: 6, md: 0, lg: 0, xl: 0 }}>
               <Text
-                as={'h1'}
                 fontWeight={'bold'}
-                fontSize={{ base: '24', md: '30', lg: '34', xl: '36' }}
+                fontSize={{ base: '22px', md: '30px', lg: '34px', xl: '36px' }}
                 mt={6}
               >
                 Services
@@ -52,13 +49,13 @@ const ServiceSection = ({ theme }) => {
                 Business, Agency or SaaS Website. Comes with refreshing design
                 and everything you need to kickstart your next web project.
               </Text>
-              <ButtonComponent
+              {/* <ButtonComponent
                 text={'Request Custom Service'}
                 icon={<ChevronRightIcon />}
                 onClickFuntion={onClickFuntion}
-              />
+              /> */}
             </GridItem>
-            <GridItem w="100%">
+            <GridItem mx={0} px={0}>
               <Grid
                 templateColumns={{
                   base: 'repeat(1, 1fr)',
@@ -66,7 +63,7 @@ const ServiceSection = ({ theme }) => {
                   lg: 'repeat(2, 1fr)',
                   xl: 'repeat(2, 1fr)',
                 }}
-                gap={6}
+                gap={2}
               >
                 <ServiceCard
                   theme={theme}

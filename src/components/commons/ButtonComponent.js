@@ -5,6 +5,8 @@ const ButtonComponent = ({ text, icon, onClickFuntion }) => {
   return (
     <Button
       mt={6}
+      mx={0}
+      fontSize={'16px'}
       rightIcon={icon}
       bgGradient="linear(to-r, #F71C0B, #F3133B, #F00B5E)"
       border="1px solid #F71C0B"

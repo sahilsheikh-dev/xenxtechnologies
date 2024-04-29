@@ -6,7 +6,7 @@ const Stats = ({ theme }) => {
     <>
       <Grid
         templateColumns={{
-          base: 'repeat(3, 1fr)',
+          base: 'repeat(2, 1fr)',
           md: 'repeat(3, 1fr)',
           lg: 'repeat(4, 1fr)',
           xl: 'repeat(5, 1fr)',
@@ -40,6 +40,19 @@ const Stats = ({ theme }) => {
               25+
             </Text>
             Projects Done
+          </Text>
+        </GridItem>
+        <GridItem w="100%">
+          <Text>
+            <Text
+              fontSize={'40px'}
+              fontWeight={'bold'}
+              bgGradient="linear(to-r, #F71C0B, #F3133B, #F00B5E)"
+              bgClip="text"
+            >
+              25+
+            </Text>
+            Web Projects
           </Text>
         </GridItem>
         <GridItem w="100%">

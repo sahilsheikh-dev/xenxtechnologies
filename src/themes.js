@@ -32,7 +32,7 @@ export const GlobalStyles = createGlobalStyle`
   body::-webkit-scrollbar {
     display: none;
   }
-  home {
+  body {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }

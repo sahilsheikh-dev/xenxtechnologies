@@ -54,12 +54,12 @@ const Footer = ({ theme }) => {
               <Text as={'p'} fontSize={'16px'} mb={1}><Link to={'/Contact'} _hover={{ color: '#F71C0B' }}>Contact Us</Link></Text>
             </GridItem>
 
-            <GridItem w={'100%'} mb={6}>
+            <GridItem mb={6}>
               <Text as={'h1'} fontSize={'24px'} mb={3} fontWeight={'bold'}>Get in Touch</Text>
               <Text as={'p'} fontSize={'16px'} mb={1} textColor={'gray'}>Customer Care</Text>
               <Text as={'p'} fontSize={'16px'} mb={3}><Link to={'tel:+918766509387'} _hover={{ color: '#F71C0B' }}>+91 8766509387</Link></Text>
               <Text as={'p'} fontSize={'16px'} mb={1} textColor={'gray'}>Need live support?</Text>
-              <Text as={'p'} fontSize={'16px'} mb={1}><Link to={'mailto:support@xenxtechnologies.com'} _hover={{ color: '#F71C0B' }}>support@xenxtechnologies.com</Link></Text>
+              <Text as={'p'} fontSize={'16px'} mb={1}><Link to={'mailto:support@xenxtechnologies.com'} _hover={{ color: '#F71C0B' }}>Email Us</Link></Text>
             </GridItem>
           </Grid>
         </GridItem>

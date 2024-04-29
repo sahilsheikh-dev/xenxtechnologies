@@ -31,13 +31,17 @@ const ServiceCard = ({
         borderRadius={'15px'}
         p={6}
         _hover={{}}
-        w={'95%'}
+        maxW={'95%'}
+        mx={'auto'}
+        mb={3}
       >
         <Image maxW={'60px'} maxH={'60px'} src={serviceImg} />
-        <Text fontSize={'24px'} fontWeight={'bold'}>
+        <Text fontSize={'24px'} fontWeight={'bold'} textAlign={'left'}>
           {serviceTitle}
         </Text>
-        <Text fontSize={'14px'}>{serviceDescription}</Text>
+        <Text fontSize={'14px'} textAlign={'left'}>
+          {serviceDescription}
+        </Text>
       </Stack>
     </>
   );
