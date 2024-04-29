@@ -33,6 +33,7 @@ const ServiceCard = ({
         _hover={{}}
         maxW={'95%'}
         mx={'auto'}
+        pb={12}
         mb={3}
       >
         <Image maxW={'60px'} maxH={'60px'} src={serviceImg} />

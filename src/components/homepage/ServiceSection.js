@@ -5,8 +5,6 @@ import ServiceImg1 from '../../assets/images/service/service-img1.png';
 import ServiceImg2 from '../../assets/images/service/service-img2.png';
 import ServiceImg3 from '../../assets/images/service/service-img3.png';
 import ServiceImg4 from '../../assets/images/service/service-img4.png';
-// import ButtonComponent from '../commons/ButtonComponent';
-// import { ChevronRightIcon } from '@chakra-ui/icons';
 
 const ServiceSection = ({ theme }) => {
   // const onClickFuntion = () => {
@@ -17,7 +15,11 @@ const ServiceSection = ({ theme }) => {
     <>
       <Stack
         direction={{ base: 'column', md: 'row' }}
-        // width={{ base: 'full', md: 'auto' }}
+        bgGradient={
+          theme === 'dark'
+            ? 'linear-gradient(180deg, #010101 50%, #F71C0B 50%)'
+            : 'linear-gradient(180deg, #FAFAFA 50%, #F71C0B 50%)'
+        }
         my={12}
       >
         <Box
@@ -29,14 +31,19 @@ const ServiceSection = ({ theme }) => {
           <Grid
             templateColumns={{
               base: 'repeat(1, 1fr)',
-              md: 'repeat(2, 1fr)',
-              lg: 'repeat(2, 1fr)',
-              xl: 'repeat(2, 1fr)',
+              md: 'repeat(1, 1fr)',
+              lg: 'repeat(1, 1fr)',
+              xl: 'repeat(1, 1fr)',
             }}
-            textAlign={{ base: 'center', md: 'left', lg: 'left', xl: 'left' }}
+            textAlign={{
+              base: 'center',
+              md: 'center',
+              lg: 'center',
+              xl: 'center',
+            }}
             gap={2}
           >
-            <GridItem mx={0} px={0} mb={{ base: 6, md: 0, lg: 0, xl: 0 }}>
+            <GridItem mx={0} px={0} mb={12}>
               <Text
                 fontWeight={'bold'}
                 fontSize={{ base: '22px', md: '30px', lg: '34px', xl: '36px' }}
@@ -44,24 +51,19 @@ const ServiceSection = ({ theme }) => {
               >
                 Services
               </Text>
-              <Text>
+              <Text maxW={'750px'} mx={'auto'}>
                 Handcrafted Tailwind CSS template for your next - Startup,
                 Business, Agency or SaaS Website. Comes with refreshing design
                 and everything you need to kickstart your next web project.
               </Text>
-              {/* <ButtonComponent
-                text={'Request Custom Service'}
-                icon={<ChevronRightIcon />}
-                onClickFuntion={onClickFuntion}
-              /> */}
             </GridItem>
             <GridItem mx={0} px={0}>
               <Grid
                 templateColumns={{
                   base: 'repeat(1, 1fr)',
-                  md: 'repeat(2, 1fr)',
-                  lg: 'repeat(2, 1fr)',
-                  xl: 'repeat(2, 1fr)',
+                  md: 'repeat(4, 1fr)',
+                  lg: 'repeat(4, 1fr)',
+                  xl: 'repeat(4, 1fr)',
                 }}
                 gap={2}
               >
@@ -92,7 +94,7 @@ const ServiceSection = ({ theme }) => {
                 <ServiceCard
                   theme={theme}
                   serviceImg={ServiceImg4}
-                  serviceTitle={'E-Commerce Solutions'}
+                  serviceTitle={'E-Commerce'}
                   serviceDescription={
                     'Created e-commerce platform with payment gateways, inventory management, and more.'
                   }
