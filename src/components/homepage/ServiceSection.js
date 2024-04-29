@@ -5,8 +5,8 @@ import ServiceImg1 from '../../assets/images/service/service-img1.png';
 import ServiceImg2 from '../../assets/images/service/service-img2.png';
 import ServiceImg3 from '../../assets/images/service/service-img3.png';
 import ServiceImg4 from '../../assets/images/service/service-img4.png';
-import ButtonComponent from '../commons/ButtonComponent';
-import { ChevronRightIcon } from '@chakra-ui/icons';
+// import ButtonComponent from '../commons/ButtonComponent';
+// import { ChevronRightIcon } from '@chakra-ui/icons';
 
 const ServiceSection = ({ theme }) => {
   const onClickFuntion = () => {
