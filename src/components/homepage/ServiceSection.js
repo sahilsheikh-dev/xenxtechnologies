@@ -13,15 +13,7 @@ const ServiceSection = ({ theme }) => {
 
   return (
     <>
-      <Stack
-        direction={{ base: 'column', md: 'row' }}
-        bgGradient={
-          theme === 'dark'
-            ? 'linear-gradient(180deg, #010101 50%, #F71C0B 50%)'
-            : 'linear-gradient(180deg, #FAFAFA 50%, #F71C0B 50%)'
-        }
-        my={12}
-      >
+      <Stack direction={{ base: 'column', md: 'row' }} my={12}>
         <Box
           fontFamily={'Montserrat'}
           mx={{ base: 1, md: 16, lg: 16, xl: 16 }}
@@ -31,75 +23,103 @@ const ServiceSection = ({ theme }) => {
           <Grid
             templateColumns={{
               base: 'repeat(1, 1fr)',
-              md: 'repeat(1, 1fr)',
-              lg: 'repeat(1, 1fr)',
-              xl: 'repeat(1, 1fr)',
+              md: 'repeat(2, 1fr)',
+              lg: 'repeat(2, 1fr)',
+              xl: 'repeat(2, 1fr)',
             }}
             textAlign={{
               base: 'center',
-              md: 'center',
-              lg: 'center',
-              xl: 'center',
+              md: 'left',
+              lg: 'left',
+              xl: 'left',
             }}
             gap={2}
           >
-            <GridItem mx={0} px={0} mb={12}>
+            <GridItem
+              mx={0}
+              px={0}
+              minH={{ base: '', md: '300px', lg: '300px', xl: '300px' }}
+            >
+              <Text
+                fontWeight={'bold'}
+                fontSize={{ base: '18px', md: '24px', lg: '24px', xl: '24px' }}
+                textColor={'#F71C0B'}
+              >
+                What We Do
+              </Text>
               <Text
                 fontWeight={'bold'}
                 fontSize={{ base: '22px', md: '30px', lg: '34px', xl: '36px' }}
-                mt={6}
+                mt={3}
+                mb={6}
               >
-                Services
+                Our Services
               </Text>
-              <Text maxW={'750px'} mx={'auto'}>
+              <Text maxW={'750px'} mx={'auto'} fontSize={'16px'}>
                 Handcrafted Tailwind CSS template for your next - Startup,
                 Business, Agency or SaaS Website. Comes with refreshing design
                 and everything you need to kickstart your next web project.
               </Text>
             </GridItem>
-            <GridItem mx={0} px={0}>
-              <Grid
-                templateColumns={{
-                  base: 'repeat(1, 1fr)',
-                  md: 'repeat(4, 1fr)',
-                  lg: 'repeat(4, 1fr)',
-                  xl: 'repeat(4, 1fr)',
-                }}
-                gap={2}
-              >
-                <ServiceCard
-                  theme={theme}
-                  serviceImg={ServiceImg1}
-                  serviceTitle={'Web Development'}
-                  serviceDescription={
-                    'Resolve business challenges and thrive in the digital landscape with our custom web development services.'
-                  }
-                />
-                <ServiceCard
-                  theme={theme}
-                  serviceImg={ServiceImg2}
-                  serviceTitle={'Mobile Development'}
-                  serviceDescription={
-                    'Transform your vision into reality with our native Android and iOS app development services.'
-                  }
-                />
-                <ServiceCard
-                  theme={theme}
-                  serviceImg={ServiceImg3}
-                  serviceTitle={'UI UX Design'}
-                  serviceDescription={
-                    'Create delightful experiences and boost user engagement with our design solutions driven by our team.'
-                  }
-                />
-                <ServiceCard
-                  theme={theme}
-                  serviceImg={ServiceImg4}
-                  serviceTitle={'E-Commerce'}
-                  serviceDescription={
-                    'Created e-commerce platform with payment gateways, inventory management, and more.'
-                  }
-                />
-              </Grid>
+            <GridItem
+              mx={0}
+              px={0}
+              minH={{ base: '', md: '300px', lg: '300px', xl: '300px' }}
+            >
+              <ServiceCard
+                theme={theme}
+                serviceImg={ServiceImg1}
+                serviceTitle={'Web Development'}
+                serviceDescription={
+                  'Resolve business challenges and thrive in the digital landscape with our custom web development services.'
+                }
+                price={'14,999/-'}
+              />
+            </GridItem>
+            <GridItem
+              mx={0}
+              px={0}
+              minH={{ base: '', md: '300px', lg: '300px', xl: '300px' }}
+            >
+              <ServiceCard
+                theme={theme}
+                serviceImg={ServiceImg2}
+                serviceTitle={'Mobile Development'}
+                serviceDescription={
+                  'Transform your vision into reality with our native Android and iOS app development services.'
+                }
+                price={'19,999/-'}
+              />
+            </GridItem>
+            <GridItem
+              mx={0}
+              px={0}
+              minH={{ base: '', md: '300px', lg: '300px', xl: '300px' }}
+            >
+              <ServiceCard
+                theme={theme}
+                serviceImg={ServiceImg3}
+                serviceTitle={'UI UX Design'}
+                serviceDescription={
+                  'Create delightful experiences and boost user engagement with our design solutions driven by our team.'
+                }
+                price={'6,999/-'}
+              />
+            </GridItem>
+            <GridItem
+              mx={0}
+              px={0}
+              minH={{ base: '', md: '300px', lg: '300px', xl: '300px' }}
+            >
+              <ServiceCard
+                theme={theme}
+                serviceImg={ServiceImg4}
+                serviceTitle={'E-Commerce'}
+                serviceDescription={
+                  'Created e-commerce platform with payment gateways, inventory management, and more.'
+                }
+                price={'19,999/-'}
+              />
             </GridItem>
           </Grid>
         </Box>

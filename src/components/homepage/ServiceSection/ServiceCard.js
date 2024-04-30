@@ -6,41 +6,46 @@ const ServiceCard = ({
   serviceImg,
   serviceTitle,
   serviceDescription,
+  price,
 }) => {
   return (
     <>
       <Stack
-        bg={
+        bgGradient={
           theme === 'dark'
-            ? `radial-gradient(circle at 100% 100%, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 0% 0%/10px 10px no-repeat,
-      radial-gradient(circle at 0 100%, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 100% 0%/10px 10px no-repeat,
-      radial-gradient(circle at 100% 0, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 0% 100%/10px 10px no-repeat,
-      radial-gradient(circle at 0 0, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 100% 100%/10px 10px no-repeat,
-      linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)) 50% 50%/calc(100% - 6px) calc(100% - 20px) no-repeat,
-      linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)) 50% 50%/calc(100% - 20px) calc(100% - 6px) no-repeat,
-      linear-gradient(131deg, #010101 25%, #f71c0b 100%)`
-            : `radial-gradient(circle at 100% 100%, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 0% 0%/10px 10px no-repeat,
-        radial-gradient(circle at 0 100%, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 100% 0%/10px 10px no-repeat,
-        radial-gradient(circle at 100% 0, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 0% 100%/10px 10px no-repeat,
-        radial-gradient(circle at 0 0, rgba(255,255,255,0) 0, rgba(255,255,255,0) 7px, transparent 7px) 100% 100%/10px 10px no-repeat,
-        linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)) 50% 50%/calc(100% - 6px) calc(100% - 20px) no-repeat,
-        linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)) 50% 50%/calc(100% - 20px) calc(100% - 6px) no-repeat,
-        linear-gradient(131deg, #fafafa 25%, #f71c0b 100%)`
+            ? 'linear-gradient(45deg, #1A1A1A 50%, #333232 50%)'
+            : 'linear-gradient(45deg, #ededed 50%, #d6d6d6 50%)'
         }
         boxSizing="border-box"
         borderRadius={'15px'}
-        p={6}
         _hover={{}}
         maxW={'95%'}
+        minH={{ base: '', md: '300px', lg: '300px', xl: '300px' }}
         mx={'auto'}
-        pb={12}
         mb={3}
+        p={{ base: 6, md: 12, lg: 12, xl: 12 }}
       >
         <Image maxW={'60px'} maxH={'60px'} src={serviceImg} />
         <Text fontSize={'24px'} fontWeight={'bold'} textAlign={'left'}>
           {serviceTitle}
         </Text>
-        <Text fontSize={'14px'} textAlign={'left'}>
+        <Text
+          fontSize={'16px'}
+          textAlign={'left'}
+          fontWeight={'bold'}
+          textColor={'gray'}
+        >
+          Starting From{' '}
+          <Text
+            as={'span'}
+            fontSize={'30px'}
+            fontWeight={'bold'}
+            textColor={'#F71C0B'}
+          >
+            ₹{price}
+          </Text>
+        </Text>
+        <Text fontSize={'16px'} textAlign={'left'}>
           {serviceDescription}
         </Text>
       </Stack>
