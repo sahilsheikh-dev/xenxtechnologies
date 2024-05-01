@@ -82,6 +82,14 @@ const Header = ({ themeToggler, theme }) => {
               fontWeight={'semibold'}
               px={3}
               _hover={{ color: '#F71C0B' }}
+              color={pageName === 'Project' ? '#F71C0B' : ''}
+            >
+              <Link to={'/Project'}>Project</Link>
+            </Text>
+            <Text
+              fontWeight={'semibold'}
+              px={3}
+              _hover={{ color: '#F71C0B' }}
               color={pageName === 'About' ? '#F71C0B' : ''}
             >
               <Link to={'/About'}>About</Link>
@@ -90,9 +98,9 @@ const Header = ({ themeToggler, theme }) => {
               fontWeight={'semibold'}
               px={3}
               _hover={{ color: '#F71C0B' }}
-              color={pageName === 'Pricing' ? '#F71C0B' : ''}
+              color={pageName === 'Testimonial' ? '#F71C0B' : ''}
             >
-              <Link to={'/Pricing'}>Pricing</Link>
+              <Link to="/Testimonial">Testimonial</Link>
             </Text>
             <Text
               fontWeight={'semibold'}

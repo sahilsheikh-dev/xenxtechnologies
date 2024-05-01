@@ -17,8 +17,7 @@ const ServiceCard = ({
             : 'linear-gradient(45deg, #ededed 50%, #d6d6d6 50%)'
         }
         boxSizing="border-box"
-        borderRadius={'15px'}
-        _hover={{}}
+        // borderRadius={'15px'}
         maxW={'95%'}
         minH={{ base: '', md: '300px', lg: '300px', xl: '300px' }}
         mx={'auto'}
@@ -26,7 +25,7 @@ const ServiceCard = ({
         p={{ base: 6, md: 12, lg: 12, xl: 12 }}
       >
         <Image maxW={'60px'} maxH={'60px'} src={serviceImg} />
-        <Text fontSize={'24px'} fontWeight={'bold'} textAlign={'left'}>
+        <Text fontSize={'24px'} fontWeight={'bold'} textAlign={'left'} mt={3}>
           {serviceTitle}
         </Text>
         <Text
