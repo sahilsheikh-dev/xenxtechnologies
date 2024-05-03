@@ -1,11 +1,9 @@
-import { HeroParallaxSection } from "@/components/heroSection/hero-parallaxComponent";
-import { ServiceSection } from "@/components/serviceSection/serviceSection";
+import Homepage from "@/screens/Homepage";
 
 export default function Home() {
   return (
     <>
-      <HeroParallaxSection />
-      <ServiceSection />
+      <Homepage />
     </>
   );
 }

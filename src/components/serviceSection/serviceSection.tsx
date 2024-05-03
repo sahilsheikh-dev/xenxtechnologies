@@ -1,18 +1,25 @@
 import * as React from "react";
 import ThreeDServiceCard from "./serviceCardComponent";
 import { HeroHighlightComponent } from "../common/heroHighlight/hero-highlightComponent";
+import webDevelopmentIcon from "../../assets/images/service/service-img1.png";
+import mobileDevelopmentIcon from "../../assets/images/service/service-img2.png";
+import uiuxDesignIcon from "../../assets/images/service/service-img3.png";
+import ecommerceSolutionIcon from "../../assets/images/service/service-img4.png";
 
 export function ServiceSection() {
   return (
     <>
-      <div className="text-center lg:text-left">
+      <div className="text-center lg:text-left mb-48">
         <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
-          <HeroHighlightComponent text="Here are the" highlightedText="Services we Provide"  />
+          <HeroHighlightComponent
+            text="Here are the"
+            highlightedText="Services we Provide"
+          />
           <div className="grid items-center gap-2 lg:grid-cols-4">
             <div className="lg:mt-0">
               <ThreeDServiceCard
                 title="Web Development"
-                imgUrl=""
+                imgUrl={webDevelopmentIcon}
                 description="Resolve business challenges and thrive in the digital landscape with our custom web development services."
                 price="14,999"
               />
@@ -20,7 +27,7 @@ export function ServiceSection() {
             <div className="lg:mb-0">
               <ThreeDServiceCard
                 title="Mobile Development"
-                imgUrl=""
+                imgUrl={mobileDevelopmentIcon}
                 description="Transform your vision into reality with our native Android and iOS app development services."
                 price="19,999"
               />
@@ -28,7 +35,7 @@ export function ServiceSection() {
             <div className="lg:mb-0">
               <ThreeDServiceCard
                 title="UI UX Design"
-                imgUrl=""
+                imgUrl={uiuxDesignIcon}
                 description="Create delightful experiences and boost user engagement with our design solutions driven by our team."
                 price="6,999"
               />
@@ -36,7 +43,7 @@ export function ServiceSection() {
             <div className="lg:mb-0">
               <ThreeDServiceCard
                 title="ECommerce Solutions"
-                imgUrl=""
+                imgUrl={ecommerceSolutionIcon}
                 description="Created e-commerce platform with payment gateways, inventory management, and more."
                 price="19,999"
               />
