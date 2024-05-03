@@ -1,7 +1,13 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "./navbar-menu";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import {
+  IconBriefcase,
+  IconDeviceLaptop,
+  IconHome,
+  IconStars,
+  IconUser,
+} from "@tabler/icons-react";
 
 export function NavbarSection() {
   const navItems = [
@@ -16,11 +22,23 @@ export function NavbarSection() {
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Contact",
-      link: "/contact",
+      name: "Work",
+      link: "/work",
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <IconBriefcase className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
+    },
+    {
+      name: "Services",
+      link: "/services",
+      icon: (
+        <IconDeviceLaptop className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
+    },
+    {
+      name: "Testimonial",
+      link: "/testimonial",
+      icon: <IconStars className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
   ];
   return (
