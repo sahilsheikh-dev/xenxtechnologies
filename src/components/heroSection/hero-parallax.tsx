@@ -9,6 +9,8 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { ThreeDHeroElement } from "./3dHeroElementComponent";
+import GradientButton from "../common/buttonComponents/gradient-button";
 
 export const HeroParallax = ({
   products,
@@ -57,7 +59,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] mb-48"
+      className="h-[300vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] mb-48"
       style={{ minHeight: "300vh" }}
     >
       <Header />
@@ -104,15 +106,28 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0 z-50 md:z-0 lg:z-0 xl:z-0 h-screen">
-      <h1 className="text-2xl md:text-7xl font-bold ">
-        The Ultimate <br /> development agency
-      </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
-      </p>
+    <div className="relative mx-auto pb-20 md:pb-40 px-4 w-full left-0 top-0 z-50 h-screen ">
+      <section className="mb-48">
+        <div className="px-6 text-center lg:text-left">
+          <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
+            <div className="grid items-center gap-12 lg:grid-cols-1">
+              <div className="mt-12 lg:mt-0">
+                <p className="mb-4 text-md md:text-xl xl:text-xl">
+                  Hello, we are
+                </p>
+                <h1 className="mt-2 text-5xl font-bold tracking-tight text-3xl md:text-6xl xl:text-7xl">
+                  Xenx Technologies
+                </h1>
+                <p className="my-6 text-xl md:text-2xl xl:text-3xl">
+                  Assist clients in generating significant revenue from
+                  websites!
+                </p>
+                <GradientButton text="Contact Now!" path="/contact" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
@@ -153,7 +168,7 @@ export const ProductCard = ({
         />
       </Link>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
+      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 ">
         {product.title}
       </h2>
     </motion.div>

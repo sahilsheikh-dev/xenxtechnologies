@@ -24,12 +24,7 @@ export function HeroSection(props: IAppProps) {
               <GradientButton text="Contact Now!" path="/contact" />
             </div> */}
             <div className="lg:mb-0">
-              <ThreeDHeroElement />
-              {/* <img
-                src="https://xenxtechnologies.netlify.app/static/media/hero-image.832da2715c1b1dabdad3.png"
-                className="rounded-lg shadow-lg dark:shadow-black/20"
-                alt=""
-              /> */}
+              <ThreeDHeroElement imgurl="https://xenxtechnologies.netlify.app/static/media/hero-image.832da2715c1b1dabdad3.png" />
             </div>
           </div>
         </div>

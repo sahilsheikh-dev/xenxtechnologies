@@ -18,7 +18,7 @@ const ThreeDServiceCard = ({ title, imgUrl, description, price }: any) => {
             style={{ maxWidth: "50px" }}
           />
         </CardItem>
-        <CardItem translateZ="50" className="text-xl font-bold text-white">
+        <CardItem translateZ="50" className="text-xl font-bold ">
           {title}
         </CardItem>
         <CardItem
@@ -26,7 +26,7 @@ const ThreeDServiceCard = ({ title, imgUrl, description, price }: any) => {
           className="text-sm text-neutral-500 mt-2 mb-4"
         >
           Starts from{" "}
-          <span className="text-xl font-bold text-white">₹{price}/-</span>
+          <span className="text-xl font-bold ">₹{price}/-</span>
         </CardItem>
         <CardItem
           as="p"
