@@ -14,4 +14,3 @@ export function InfiniteMovingCardsComponent({ testimonials }: any) {
     </div>
   );
 }
-

@@ -15,7 +15,9 @@ export function ServiceSection() {
           <div className="grid items-center gap-2 lg:grid-cols-2">
             <div className="lg:mt-0">
               <h3 className="text-xl font-bold text-red-700">What We Do</h3>
-              <h1 className="text-5xl font-bold">Our Services</h1>
+              <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold">
+                Our Services
+              </h1>
               <p className="mt-5 text-neutral-500 text-xl mb-6">
                 We offer high quality products for competitive prices. Our main
                 goal is customer satisfaction, which we obtain through market
@@ -55,7 +57,7 @@ export function ServiceSection() {
               />
             </div>
             <div className="lg:mb-0 text-center">
-              <h1 className="text-5xl font-bold mb-5">
+              <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-5">
                 Do You Want <br /> Something Different?
               </h1>
               <GradientButton text="Contact Now!" path="/contact" />
