@@ -14,15 +14,17 @@ export function ServiceSection() {
         <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
           <div className="grid items-center gap-2 lg:grid-cols-2">
             <div className="lg:mt-0">
-              <h3 className="text-xl font-bold text-red-700">What We Do</h3>
-              <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold">
-                Our Services
-              </h1>
-              <p className="mt-5 text-neutral-500 text-xl mb-6">
-                We offer high quality products for competitive prices. Our main
-                goal is customer satisfaction, which we obtain through market
-                orientation of ongoing service and support.
-              </p>
+              <div className="p-6 mx-4">
+                <h3 className="text-xl font-bold text-red-700">What We Do</h3>
+                <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold">
+                  Our Services
+                </h1>
+                <p className="mt-5 text-neutral-500 text-lg mb-6">
+                  We offer high quality products for competitive prices. Our
+                  main goal is customer satisfaction, which we obtain through
+                  market orientation of ongoing service and support.
+                </p>
+              </div>
             </div>
             <div className="lg:mb-0">
               <ThreeDServiceCard

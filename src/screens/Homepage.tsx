@@ -1,4 +1,5 @@
 // import { HeroParallaxSection } from "@/components/heroSection/hero-parallaxComponent";
+import { ClientStaticsSection } from "@/components/clientStaticsSection/clientStaticsSection";
 import { HeroSection } from "@/components/heroSection/heroSection";
 import { ServiceSection } from "@/components/serviceSection/serviceSection";
 import { TechnologySection } from "@/components/technologiesSection/technologySection";
@@ -9,6 +10,7 @@ export default function Homepage(props: any) {
   return (
     <>
       <HeroSection />
+      <ClientStaticsSection />
       <TechnologySection />
       {/* <HeroParallaxSection /> */}
       <ServiceSection />

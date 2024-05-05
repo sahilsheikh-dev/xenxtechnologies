@@ -56,7 +56,7 @@ const technologies = [
 export function TechnologyCardComponent() {
   return (
     <div
-      className="flex flex-row items-center justify-center mb-10 w-full"
+      className="flex flex-row items-center justify-center mb-10 mx-auto"
       style={{ maxWidth: "90%" }}
     >
       <AnimatedTooltip items={technologies} />

@@ -12,7 +12,7 @@ export function HeroSection(props: IAppProps) {
         <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-1">
             <div className="lg:mb-0">
-              <ThreeDHeroElement imgurl="https://xenxtechnologies.netlify.app/static/media/hero-image.832da2715c1b1dabdad3.png" />
+              <ThreeDHeroElement />
             </div>
           </div>
         </div>
