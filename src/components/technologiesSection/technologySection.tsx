@@ -17,6 +17,7 @@ export function TechnologySection() {
             </h1>
             <p className="mt-5 text-neutral-500 text-xl mb-6 text-center">
               We work with over 20 diverse technologies, incorporating the
+              <br />
               latest and most renowned tech stacks and platforms.
             </p>
             <TechnologyCardComponent />
