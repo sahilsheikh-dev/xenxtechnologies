@@ -21,7 +21,7 @@ export default function ClientStaticCardComponent() {
     <>
       <div className="grid grid-flow-col auto-cols-max p-10">
         {clientImages.map((clientImg, index) => (
-          <ClientStaticCard clientImg={clientImg} />
+          <ClientStaticCard clientImg={clientImg} key={index} />
         ))}
       </div>
     </>
