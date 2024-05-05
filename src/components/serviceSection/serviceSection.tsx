@@ -10,7 +10,7 @@ import GradientButton from "../common/buttonComponents/gradient-button";
 export function ServiceSection() {
   return (
     <>
-      <div className="text-center lg:text-left mb-48">
+      <div className="text-center lg:text-left mb-24">
         <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
           <div className="grid items-center gap-2 lg:grid-cols-2">
             <div className="lg:mt-0">
