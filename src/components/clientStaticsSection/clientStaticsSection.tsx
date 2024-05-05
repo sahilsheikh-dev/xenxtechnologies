@@ -22,7 +22,7 @@ export function ClientStaticsSection() {
             </div>
             <div>
               <NumberTickerComponent number="5" />
-              <h1>Y's Experience</h1>
+              <h1>Y&apos;s Experience</h1>
             </div>
           </div>
         </div>
