@@ -4,7 +4,7 @@ import { ContactFormComponent } from "./contact-formComponent";
 export default function ContactSection() {
   return (
     <>
-      <div className="text-center lg:text-left mb-24">
+      <div className="text-center lg:text-left py-20 mb-20">
         <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
           <h3 className="text-xl font-bold text-red-700 text-center">
             Get in Touch
@@ -45,7 +45,7 @@ export default function ContactSection() {
                     </dt>
                     <a
                       href="tel:+918766509387"
-                      className="mt-2 text-base text-gray-500 text-xs md:text-lg lg:text-lg xl:text-lg"
+                      className="mt-2 text-base text-gray-500 text-lg"
                     >
                       +91 8766 509 387
                     </a>
@@ -74,9 +74,9 @@ export default function ContactSection() {
                     <dt className="text-lg leading-6 font-medium">Email</dt>
                     <a
                       href="mailto:xenxtechnologies@gmail.com"
-                      className="mt-2 text-base text-gray-500 text-xs md:text-lg lg:text-lg xl:text-lg"
+                      className="mt-2 text-base text-gray-500 text-lg"
                     >
-                      help@xenxtechnologies.com
+                      Mail Us Now!
                     </a>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ export default function ContactSection() {
               <div className="map mt-5">
                 <div className="rounded-lg overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14890.161235841037!2d79.06800351008935!3d21.09101465788742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d8518d644cdc2ad%3A0x900d1d1b6cf2a93e!2sXenx%20Technologies!5e0!3m2!1sen!2sin!4v1714993246414!5m2!1sen!2sin"
                     width="100%"
                     height="200"
                     style={{ border: 0 }}
@@ -98,7 +98,7 @@ export default function ContactSection() {
               <ContactFormComponent />
             </div>
           </div>
-          <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
+          {/* <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" /> */}
         </div>
       </div>
     </>
