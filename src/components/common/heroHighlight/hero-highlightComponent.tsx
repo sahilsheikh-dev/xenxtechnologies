@@ -26,7 +26,7 @@ export function HeroHighlightComponent({
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold -700 dark: max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
+        className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold -700 dark: max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto mb-0 pb-0"
       >
         {text} <br />
         <Highlight className="text-white text-xl md:text-2xl lg:text-5xl xl:text-5xl mt-10">

@@ -20,7 +20,7 @@ export function ServiceSection() {
                   Our Services
                 </h1>
                 <p className="mt-5 text-neutral-500 text-lg mb-6">
-                  We offer high quality products for competitive prices. Our
+                  We offer high quality services for competitive prices. Our
                   main goal is customer satisfaction, which we obtain through
                   market orientation of ongoing service and support.
                 </p>

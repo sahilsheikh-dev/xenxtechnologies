@@ -6,9 +6,9 @@ export default function ProjectSectionCard({
   projectUrl,
 }: any) {
   return (
-    <div>
+    <>
       <div
-        className="mb-6 block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] lg:mb-0 border border-red-700 mx-auto"
+        className="mb-6 block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] lg:mb-0 border border-red-700 mx-auto mt-0 pt-0"
         style={{ maxWidth: "90%" }}
       >
         <div
@@ -25,6 +25,6 @@ export default function ProjectSectionCard({
           <h5 className="text-lg font-bold">{name}</h5>
         </div>
       </div>
-    </div>
+    </>
   );
 }

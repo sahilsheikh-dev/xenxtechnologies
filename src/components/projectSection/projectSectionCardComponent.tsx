@@ -23,8 +23,8 @@ export default function ProjectSectionCardComponent() {
     },
   ];
   return (
-    <div>
-      <div className="grid gap-x-6 lg:grid-cols-3 lg:gap-x-12">
+    <>
+      <div className="grid gap-x-6 lg:grid-cols-3 lg:gap-x-12 mt-0 pt-0">
         {projectDetails.map((project, index) => (
           <ProjectSectionCard
             key={index}
@@ -34,6 +34,6 @@ export default function ProjectSectionCardComponent() {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 }
