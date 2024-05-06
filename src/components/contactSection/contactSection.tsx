@@ -45,7 +45,7 @@ export default function ContactSection() {
                     </dt>
                     <a
                       href="tel:+918766509387"
-                      className="mt-2 text-base text-gray-500 text-lg"
+                      className="mt-2 text-base text-gray-500 text-lg hover:text-red-700"
                     >
                       +91 8766 509 387
                     </a>
@@ -74,7 +74,7 @@ export default function ContactSection() {
                     <dt className="text-lg leading-6 font-medium">Email</dt>
                     <a
                       href="mailto:xenxtechnologies@gmail.com"
-                      className="mt-2 text-base text-gray-500 text-lg"
+                      className="mt-2 text-base text-gray-500 text-lg hover:text-red-700"
                     >
                       Mail Us Now!
                     </a>

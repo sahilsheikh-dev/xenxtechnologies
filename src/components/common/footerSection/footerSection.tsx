@@ -14,7 +14,7 @@ export default function FooterSection() {
                 <h1 className="text-3xl font-bold">Xenx Technologies</h1>
               </a>
               <ul className="grid gap-5">
-                <li className="flex items-center justify-center gap-2 lg:justify-start">
+                <li className="flex items-center justify-center gap-2 lg:justify-start hover:text-red-700">
                   <svg
                     width="20"
                     height="16"
@@ -31,7 +31,7 @@ export default function FooterSection() {
                   </svg>
                   <a href="mailto:xenxtechnologies@gmail.com">Mail Us Now!</a>
                 </li>
-                <li className="flex items-center justify-center gap-2 lg:justify-start">
+                <li className="flex items-center justify-center gap-2 lg:justify-start hover:text-red-700">
                   <svg
                     width="20"
                     height="20"
@@ -76,18 +76,16 @@ export default function FooterSection() {
               <h4 className="text-lg  font-bold mb-7">Services</h4>
               <ul className="text-sm  transition-all duration-500">
                 <li className="mb-6">
-                  <p className="EF4444 hover:text-white">Web Development</p>
+                  <p className="">Web Development</p>
                 </li>
                 <li className="mb-6">
-                  <p className=" EF4444 hover:text-white">Mobile Development</p>
+                  <p className="">Mobile Development</p>
+                </li>
+                <li className="mb-6">
+                  <p className="">UI UX Design</p>
                 </li>
                 <li>
-                  <p className="mb-6 EF4444 hover:text-white">UI UX Design</p>
-                </li>
-                <li>
-                  <p className=" EF4444 hover:text-white">
-                    ECommerce Solutions
-                  </p>
+                  <p className="">ECommerce Solutions</p>
                 </li>
               </ul>
             </div>
@@ -95,17 +93,23 @@ export default function FooterSection() {
               <h4 className="text-lg  font-bold mb-7">Resources</h4>
               <ul className="text-sm  transition-all duration-500">
                 <li className="mb-6">
-                  <a href="javascript:;" className="EF4444 hover:text-white">
+                  <a href="javascript:;" className="EF4444  hover:text-red-700">
                     FAQs
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a href="javascript:;" className=" EF4444 hover:text-white">
+                  <a
+                    href="javascript:;"
+                    className=" EF4444  hover:text-red-700"
+                  >
                     Quick Start
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:;" className=" EF4444 hover:text-white">
+                  <a
+                    href="javascript:;"
+                    className=" EF4444  hover:text-red-700"
+                  >
                     Documentation
                   </a>
                 </li>
@@ -115,17 +119,23 @@ export default function FooterSection() {
               <h4 className="text-lg  font-bold mb-7">Support</h4>
               <ul className="text-sm  transition-all duration-500">
                 <li className="mb-6">
-                  <a href="javascript:;" className="EF4444 hover:text-white">
+                  <a href="javascript:;" className="EF4444  hover:text-red-700">
                     Customer Support
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a href="javascript:;" className=" EF4444 hover:text-white">
+                  <a
+                    href="javascript:;"
+                    className=" EF4444  hover:text-red-700"
+                  >
                     License
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:;" className=" EF4444 hover:text-white">
+                  <a
+                    href="javascript:;"
+                    className=" EF4444  hover:text-red-700"
+                  >
                     Terms & Conditions
                   </a>
                 </li>
