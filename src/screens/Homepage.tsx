@@ -1,5 +1,6 @@
 // import { HeroParallaxSection } from "@/components/heroSection/hero-parallaxComponent";
 import { ClientStaticsSection } from "@/components/clientStaticsSection/clientStaticsSection";
+import ContactSection from "@/components/contactSection/contactSection";
 import { HeroSection } from "@/components/heroSection/heroSection";
 import ProjectSection from "@/components/projectSection/projectSection";
 import { ServiceSection } from "@/components/serviceSection/serviceSection";
@@ -16,6 +17,7 @@ export default function Homepage(props: any) {
       <ServiceSection />
       <ProjectSection />
       <TestimonialSection />
+      <ContactSection />
     </>
   );
 }
