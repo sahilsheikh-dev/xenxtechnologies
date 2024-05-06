@@ -10,10 +10,10 @@ export function TestimonialSection() {
             Words from Others
           </h3>
           <h1 className="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
-            It's not just us.
+            It&apos;s not just us.
           </h1>
           <p className="text-xl text-gray-100 md:text-center md:text-2xl mb-10 md:mb-20 lg:mb-20 xl:mb-20">
-            Here's what others have to say about us.
+            Here&apos;s what others have to say about us.
           </p>
           <TestimonialCardComponent />
         </div>
