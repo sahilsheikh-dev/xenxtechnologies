@@ -7,42 +7,26 @@ export default function CursorComponent() {
   useEffect(() => {
     const cursor = document.getElementById("custom-cursor");
     const links = document.getElementsByTagName("a");
-    const cursorText = document.getElementById("cursor-text");
 
-    const onMouseMove = ({ event }: any) => {
-      const { clientX, clientY } = event;
+    document.addEventListener("mousemove", function (e) {
+      const { clientX, clientY } = e;
       gsap.to(cursor, { x: clientX, y: clientY });
-    };
+    });
 
-    const onMouseEnterLink = ({ event }: any) => {
-      const link = event.target;
-      if (link.classList.contains("view")) {
-        gsap.to(cursor, { scale: 4 });
-        // cursorText.style.display = "block";
-      } else {
-        gsap.to(cursor, { scale: 4 });
-      }
-    };
-
-    const onMouseLeaveLink = () => {
-      gsap.to(cursor, { scale: 1 });
-      //   cursorText.style.display = "block";
-    };
-
-    document.addEventListener("mousemove", onMouseMove);
     Array.from(links).forEach((link) => {
-      link.addEventListener("mouseenter", onMouseEnterLink);
-      link.addEventListener("mouseleave", onMouseLeaveLink);
+      link.addEventListener("mouseenter", function (e) {
+        const link = e.target;
+        gsap.to(cursor, { scale: 4 });
+      });
+      link.addEventListener("mouseleave", function (e) {
+        gsap.to(cursor, { scale: 1 });
+      });
     });
   });
 
   return (
     <>
-      <div id="custom-cursor" className="custom-cursor">
-        <div id="cursor-text" className="cursor-text">
-          View
-        </div>
-      </div>
+      <div id="custom-cursor" className="custom-cursor"></div>
     </>
   );
 }
