@@ -158,7 +158,7 @@ nav li:first-child {
   height: 20px;
   border-radius: 50%;
   pointer-events: none;
-  z-index: 9999999999999999999999999;
+  z-index: 9999999 !important;
   mix-blend-mode: difference;
   padding: 10px;
   display: flex;
