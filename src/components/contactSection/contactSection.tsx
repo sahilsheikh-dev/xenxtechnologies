@@ -14,13 +14,13 @@ export default function ContactSection() {
           </h1>
           <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
           <div className="grid items-center gap-2 lg:grid-cols-2">
-            <div className="lg:mt-0">
-              <p className="mb-10 text-xl">
+            <div className="lg:mt-0 mx-auto" style={{ maxWidth: "95%" }}>
+              <p className="mb-10 text-lg">
                 Please fill out the form on this section to contact with Us. Or
                 call between 9:00 a.m. and 8:00 p.m. IST, Monday through Friday
               </p>
               <div className="contacts text-left">
-                <div className="flex mb-5 mx-auto" style={{ maxWidth: "95%" }}>
+                <div className="flex mb-5 mx-auto">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-500">
                       <svg
@@ -40,7 +40,7 @@ export default function ContactSection() {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <dt className="text-lg leading-6 font-medium">
+                    <dt className="text-sm md:text-lg lg:text-lg xl:text-lg leading-6 font-medium">
                       Phone number
                     </dt>
                     <a
@@ -51,7 +51,7 @@ export default function ContactSection() {
                     </a>
                   </div>
                 </div>
-                <div className="flex mx-auto" style={{ maxWidth: "95%" }}>
+                <div className="flex mx-auto">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-500">
                       <svg
@@ -74,9 +74,9 @@ export default function ContactSection() {
                     <dt className="text-lg leading-6 font-medium">Email</dt>
                     <a
                       href="mailto:xenxtechnologies@gmail.com"
-                      className="mt-2 text-base text-gray-500 text-lg hover:text-red-700"
+                      className="mt-2 text-base text-gray-500 text-sm md:text-lg lg:text-lg xl:text-lg hover:text-red-700"
                     >
-                      Mail Us Now!
+                      xenxtechnologies@gmail.com
                     </a>
                   </div>
                 </div>

@@ -3,7 +3,7 @@ import * as React from "react";
 export default function FooterSection() {
   return (
     <>
-      <footer className="w-full">
+      <footer className="w-full" style={{ backgroundColor: "#0f0f0f" }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-8 py-10 max-w-xs mx-auto sm:max-w-2xl lg:max-w-full">
             <div className="col-span-full lg:mb-10 max-lg:border-b max-lg:pb-8 lg:border-r border-gray-200 lg:col-span-2 lg:max-w-xs lg:mb-0">
@@ -14,7 +14,7 @@ export default function FooterSection() {
                 <h1 className="text-3xl font-bold">Xenx Technologies</h1>
               </a>
               <ul className="grid gap-5">
-                <li className="flex items-center justify-center gap-2 lg:justify-start hover:text-red-700">
+                <li className="flex items-center justify-center gap-2 lg:justify-start hover:text-red-700 text-sm md:text-lg lg:text-lg xl:text-lg">
                   <svg
                     width="20"
                     height="16"
@@ -29,9 +29,11 @@ export default function FooterSection() {
                       stroke-linecap="round"
                     />
                   </svg>
-                  <a href="mailto:xenxtechnologies@gmail.com">Mail Us Now!</a>
+                  <a href="mailto:xenxtechnologies@gmail.com">
+                    xenxtechnologies@gmail.com
+                  </a>
                 </li>
-                <li className="flex items-center justify-center gap-2 lg:justify-start hover:text-red-700">
+                <li className="flex items-center justify-center gap-2 lg:justify-start hover:text-red-700 text-sm md:text-lg lg:text-lg xl:text-lg">
                   <svg
                     width="20"
                     height="20"
@@ -49,7 +51,7 @@ export default function FooterSection() {
                   </svg>
                   <a href="tel:+918766509387">+91 8766 509 387</a>
                 </li>
-                <li className="flex items-center justify-center gap-2 lg:justify-start">
+                <li className="flex items-center justify-center gap-2 lg:justify-start text-sm md:text-lg lg:text-lg xl:text-lg">
                   <svg
                     width="16"
                     height="20"
@@ -146,7 +148,13 @@ export default function FooterSection() {
           <div className="pb-7">
             <div className="flex items-center justify-center ">
               <span className="text-sm text-gray-500 ">
-                ©<a href="https://xenxtechnologies.com/">Xenx Technologies</a>{" "}
+                ©
+                <a
+                  className="font-bold hover:text-red-700"
+                  href="https://xenxtechnologies.com/"
+                >
+                  Xenx Technologies
+                </a>{" "}
                 2024, All rights reserved.
               </span>
             </div>
