@@ -1,11 +1,12 @@
 import * as React from "react";
 import NumberTickerComponent from "../common/numberTickerComponent/number-tickerComponent";
 import ClientStaticCardComponent from "./clientStaticsCardComponent";
+import bgWaveSvg from "../../assets/svg/wave.svg";
 
 export function ClientStaticsSection() {
   return (
     <>
-      <div className="text-center lg:text-left py-10 mb-10 bg-red-500">
+      <div className="text-center lg:text-left py-20 mb-10 bg-wave-svg">
         <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
           <div className="grid items-center gap-2 grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 text-center">
             <div className="text-white">

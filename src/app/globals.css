@@ -33,6 +33,18 @@ button {
   scrollbar-width: none;
 }
 
+.bg-wave-svg-down {
+  background-image: url("../assets//svg//wave-down.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-wave-svg-up {
+  background-image: url("../assets//svg//wave-up.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hero-bg-video {
   /* background-image: url("../assets//gif/red-grid-ezgif.com-optimize.gif"); */
   background-repeat: no-repeat;
@@ -169,4 +181,76 @@ nav li:first-child {
 
 /* --------------------------- 
  CUSTOM-CURSOR-SCC
+ --------------------------- */
+/* --------------------------- 
+ Animation Hero-SCC
+ --------------------------- */
+.header {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.header__background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(60deg, #010101, #0f0f0f, #010101);
+  overflow: hidden;
+  /* transform: skewY(3deg) translateY(-80px); */
+  z-index: -1;
+}
+.header__background:after {
+  content: "";
+  background: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  width: 800%;
+  position: absolute;
+  top: -400%;
+  right: -400%;
+  height: 800%;
+  opacity: 1;
+  animation-name: rotate;
+  animation-duration: 140s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@-moz-keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@-o-keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* --------------------------- 
+ Animation Header-SCC
  --------------------------- */

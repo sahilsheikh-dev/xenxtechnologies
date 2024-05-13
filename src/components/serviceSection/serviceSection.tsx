@@ -1,6 +1,5 @@
 import * as React from "react";
 import ThreeDServiceCard from "./serviceCardComponent";
-import { HeroHighlightComponent } from "../common/heroHighlight/hero-highlightComponent";
 import webDevelopmentIcon from "../../assets/images/service/service-img1.png";
 import mobileDevelopmentIcon from "../../assets/images/service/service-img2.png";
 import uiuxDesignIcon from "../../assets/images/service/service-img3.png";

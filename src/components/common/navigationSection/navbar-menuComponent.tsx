@@ -4,7 +4,6 @@ import Image from "next/image";
 import hamburgerSvg from "../../../assets/svg/burger-menu-right-svgrepo-com.svg";
 
 export function NavbarSection() {
-  
   function showSidebar() {
     const sidebar = document.querySelector(".sidebar");
     // @ts-ignore: Object is possibly 'null'.
@@ -76,6 +75,15 @@ export function NavbarSection() {
           </li>
         </ul>
       </nav>
+      {/* <div className="menu">
+        <div className="menu__logo">
+          <p>Charles Swierczek</p>
+        </div>
+        <div className="menu__buttons">
+          <div className="menu__button">About</div>
+          <div className="menu__button">Contact us</div>
+        </div>
+      </div> */}
     </>
   );
 }
