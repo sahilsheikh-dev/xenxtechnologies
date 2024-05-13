@@ -178,7 +178,11 @@ nav li:first-child {
   align-items: center;
   background-color: #ef4444;
 }
-
+@media (max-width: 800px) {
+  .custom-cursor {
+    display: none;
+  }
+}
 /* --------------------------- 
  CUSTOM-CURSOR-SCC
  --------------------------- */
