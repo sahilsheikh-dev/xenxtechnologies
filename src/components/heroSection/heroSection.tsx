@@ -1,6 +1,5 @@
 import * as React from "react";
 import { ThreeDHeroElement } from "./3dHeroElementComponent";
-import { HeroHighlightComponent } from "../common/heroHighlight/hero-highlightComponent";
 
 export interface IAppProps {}
 

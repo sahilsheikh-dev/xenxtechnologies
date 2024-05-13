@@ -9,7 +9,6 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ThreeDHeroElement } from "./3dHeroElementComponent";
 import GradientButton from "../common/buttonComponents/gradient-button";
 
 export const HeroParallax = ({

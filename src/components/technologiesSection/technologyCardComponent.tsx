@@ -2,16 +2,10 @@
 import React from "react";
 import { AnimatedTooltip } from "./technologyCard";
 import ReactJs from "../../assets/images/technologies/react.png";
-import AngularJs from "../../assets/images/technologies/angular.png";
-import ThreeJs from "../../assets/images/technologies/three.png";
-import VueJs from "../../assets/images/technologies/vue.png";
 import NextJs from "../../assets/images/technologies/nextjs-icon.png";
 import JavaScript from "../../assets/images/technologies/javascript.png";
 import Java from "../../assets/images/technologies/java.png";
-import Python from "../../assets/images/technologies/python.png";
-import GoLang from "../../assets/images/technologies/go.png";
 import Android from "../../assets/images/technologies/android.png";
-import Flutter from "../../assets/images/technologies/flutter.png";
 import Ios from "../../assets/images/technologies/ios.png";
 import MoreImg from "../../assets/images/technologies/more.png";
 

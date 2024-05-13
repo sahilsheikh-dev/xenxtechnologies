@@ -1,5 +1,4 @@
 import * as React from "react";
-import { HeroHighlightComponent } from "../common/heroHighlight/hero-highlightComponent";
 import ProjectSectionCardComponent from "./projectSectionCardComponent";
 
 export default function ProjectSection() {

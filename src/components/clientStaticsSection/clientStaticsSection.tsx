@@ -1,7 +1,5 @@
 import * as React from "react";
 import NumberTickerComponent from "../common/numberTickerComponent/number-tickerComponent";
-import ClientStaticCardComponent from "./clientStaticsCardComponent";
-import bgWaveSvg from "../../assets/svg/wave.svg";
 
 export function ClientStaticsSection() {
   return (
