@@ -12,14 +12,14 @@ export function HeroSection(props: IAppProps) {
           <div className="w-100 mx-auto">
             <div className="grid items-center gap-12 lg:grid-cols-1 mx-auto">
               <div className="lg:mb-0 mx-auto">
-                <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-7xl custom-in">
+                {/* <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-7xl custom-in">
                   Assist clients in generating significant revenue from
                   websites!
                 </h1>
                 <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-7xl text-red-700 font-bold py-5 custom-in">
                   Xenx Technologies
-                </h1>
-                {/* <ThreeDHeroElement /> */}
+                </h1> */}
+                <ThreeDHeroElement />
               </div>
             </div>
           </div>
