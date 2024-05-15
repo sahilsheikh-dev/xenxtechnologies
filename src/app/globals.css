@@ -164,20 +164,26 @@ nav li:first-child {
  CUSTOM-CURSOR-SCC
  --------------------------- */
 
+input,
+textarea {
+  cursor: none;
+}
+
 .custom-cursor {
   position: fixed;
-  width: 20px;
-  height: 20px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999999 !important;
   mix-blend-mode: difference;
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ef4444;
 }
+
 @media (max-width: 800px) {
   .custom-cursor {
     display: none;

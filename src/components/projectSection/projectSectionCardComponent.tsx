@@ -17,9 +17,9 @@ export default function ProjectSectionCardComponent() {
     },
     {
       imageUrl:
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-8cdcf.appspot.com/o/projects%2Ftechbitcrypto%2FDashboard.png?alt=media&token=8b10b2b3-a99e-45d3-abcc-b74fff75f7cd",
-      name: "TechBitCrypto - Crypto Portal",
-      projectUrl: "https://www.techbitcrypto.com/",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-8cdcf.appspot.com/o/projects%2Fidta%2Fidta-portfolio-image.png?alt=media&token=afa4a68d-cdf4-498d-ba38-2d7a6c01f199",
+      name: "Indian Dental Technician Association",
+      projectUrl: "https://indiandentaltechnicianassociation.com/",
     },
   ];
   return (
