@@ -34,18 +34,18 @@ export function NavbarSection() {
           <li>
             <a href="#">Home</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#">About</a>
+          </li> */}
+          <li>
+            <a href="#work">Work</a>
           </li>
           <li>
-            <a href="#">Work</a>
+            <a href="#services">Services</a>
           </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
+          {/* <li>
             <a href="#">Testimonial</a>
-          </li>
+          </li> */}
         </ul>
         <ul>
           <li>
@@ -56,18 +56,18 @@ export function NavbarSection() {
           <li className="hideOnMobile">
             <a href="#">Home</a>
           </li>
-          <li className="hideOnMobile">
+          {/* <li className="hideOnMobile">
             <a href="#">About</a>
+          </li> */}
+          <li className="hideOnMobile">
+            <a href="#work">Work</a>
           </li>
           <li className="hideOnMobile">
-            <a href="#">Work</a>
+            <a href="#services">Services</a>
           </li>
-          <li className="hideOnMobile">
-            <a href="#">Services</a>
-          </li>
-          <li className="hideOnMobile">
+          {/* <li className="hideOnMobile">
             <a href="#">Testimonial</a>
-          </li>
+          </li> */}
           <li className="menu-button" onClick={showSidebar}>
             <a className="text-white" href="#">
               <Image src={hamburgerSvg} alt="" style={{ maxWidth: "26px" }} />

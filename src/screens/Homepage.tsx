@@ -5,7 +5,7 @@ import { HeroSection } from "@/components/heroSection/heroSection";
 import ProjectSection from "@/components/projectSection/projectSection";
 import { ServiceSection } from "@/components/serviceSection/serviceSection";
 import { TechnologySection } from "@/components/technologiesSection/technologySection";
-import { TestimonialSection } from "@/components/testimonialSection/testimonialSection";
+// import { TestimonialSection } from "@/components/testimonialSection/testimonialSection";
 import * as React from "react";
 
 export default function Homepage(props: any) {
@@ -16,7 +16,7 @@ export default function Homepage(props: any) {
       <TechnologySection />
       <ServiceSection />
       <ProjectSection />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <ContactSection />
     </>
   );

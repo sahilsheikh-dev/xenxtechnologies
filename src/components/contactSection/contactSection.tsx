@@ -44,10 +44,10 @@ export default function ContactSection() {
                       Phone number
                     </dt>
                     <a
-                      href="tel:+918766509387"
+                      href="tel:+919321987429"
                       className="mt-2 text-base text-gray-500 hover:text-red-700"
                     >
-                      +91 8766 509 387
+                      +91 932 198 7429
                     </a>
                   </div>
                 </div>
@@ -74,7 +74,13 @@ export default function ContactSection() {
                     <dt className="text-lg leading-6 font-medium">Email</dt>
                     <a
                       href="mailto:xenxtechnologies@gmail.com"
-                      className="mt-2 text-base text-gray-500"
+                      className="mt-2 text-base text-gray-500 hidden md:block lg:block xl:block"
+                    >
+                      xenxtechnologies@gmail.com
+                    </a>
+                    <a
+                      href="mailto:xenxtechnologies@gmail.com"
+                      className="mt-2 text-base text-gray-500 block md:hidden lg:hidden xl:hidden"
                     >
                       Email Us Now!
                     </a>

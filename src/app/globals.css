@@ -13,7 +13,7 @@
 body {
   background-color: #010101;
   color: #fafafa;
-  cursor: none;
+  /* cursor: none; */
 }
 
 a {
@@ -166,7 +166,7 @@ nav li:first-child {
 
 input,
 textarea {
-  cursor: none;
+  /* cursor: none; */
 }
 
 .custom-cursor {
