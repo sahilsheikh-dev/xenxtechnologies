@@ -4,6 +4,34 @@ import Image from "next/image";
 import hamburgerSvg from "../../../assets/svg/burger-menu-right-svgrepo-com.svg";
 
 export function NavbarSection() {
+  const navBarItems = [
+    {
+      title: "Home",
+      url: "/",
+      path: "home",
+    },
+    {
+      title: "Work",
+      url: "/",
+      path: "work",
+    },
+    {
+      title: "Services",
+      url: "/",
+      path: "services",
+    },
+    {
+      title: "Testimonial",
+      url: "/",
+      path: "testimonial",
+    },
+    {
+      title: "Contact Us",
+      url: "/",
+      path: "contact",
+    },
+  ];
+
   function showSidebar() {
     const sidebar = document.querySelector(".sidebar");
     // @ts-ignore: Object is possibly 'null'.
@@ -31,21 +59,24 @@ export function NavbarSection() {
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          {/* <li>
-            <a href="#">About</a>
-          </li> */}
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          {/* <li>
-            <a href="#">Testimonial</a>
-          </li> */}
+          {navBarItems.map((navbarItem, key) => (
+            <li key={key}>
+              <a
+                href={navbarItem.url}
+                onClick={(e) => {
+                  let sectionName = document.getElementById(navbarItem.path);
+                  e.preventDefault();
+                  sectionName &&
+                    sectionName.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                }}
+              >
+                {navbarItem.title}
+              </a>
+            </li>
+          ))}
         </ul>
         <ul>
           <li>
@@ -53,21 +84,25 @@ export function NavbarSection() {
               Xenx Technologies
             </a>
           </li>
-          <li className="hideOnMobile">
-            <a href="#">Home</a>
-          </li>
-          {/* <li className="hideOnMobile">
-            <a href="#">About</a>
-          </li> */}
-          <li className="hideOnMobile">
-            <a href="#work">Work</a>
-          </li>
-          <li className="hideOnMobile">
-            <a href="#services">Services</a>
-          </li>
-          {/* <li className="hideOnMobile">
-            <a href="#">Testimonial</a>
-          </li> */}
+          {navBarItems.map((navbarItem, key) => (
+            <li className="hideOnMobile" key={key}>
+              <a
+                href={navbarItem.url}
+                onClick={(e) => {
+                  let sectionName = document.getElementById(navbarItem.path);
+                  e.preventDefault();
+                  sectionName &&
+                    sectionName.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                }}
+              >
+                {navbarItem.title}
+              </a>
+            </li>
+          ))}
+
           <li className="menu-button" onClick={showSidebar}>
             <a className="text-white" href="#">
               <Image src={hamburgerSvg} alt="" style={{ maxWidth: "26px" }} />
@@ -75,15 +110,6 @@ export function NavbarSection() {
           </li>
         </ul>
       </nav>
-      {/* <div className="menu">
-        <div className="menu__logo">
-          <p>Charles Swierczek</p>
-        </div>
-        <div className="menu__buttons">
-          <div className="menu__button">About</div>
-          <div className="menu__button">Contact us</div>
-        </div>
-      </div> */}
     </>
   );
 }

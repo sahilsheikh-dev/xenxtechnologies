@@ -4,7 +4,7 @@ import { ContactFormComponent } from "./contact-formComponent";
 export default function ContactSection() {
   return (
     <>
-      <div className="text-center lg:text-left py-20 mb-20">
+      <div id="contact" className="text-center lg:text-left py-20 mb-20">
         <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
           <h3 className="text-xl font-bold text-red-700 text-center">
             Get in Touch
