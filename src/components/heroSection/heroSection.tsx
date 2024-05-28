@@ -6,13 +6,14 @@ export interface IAppProps {}
 export function HeroSection(props: IAppProps) {
   return (
     <section className="">
-      <div className="header blob-hero">
-        <div className="header__background"></div>
+      {/* <div className="header blob-hero"> */}
+      <div className="header">
+        {/* <div className="header__background"></div> */}
         <div className="px-6 lg:text-left mx-auto w-screen">
           <div className="w-100 mx-auto">
             <div className="lg:mb-0 mx-auto">
-              {/* <ThreeDHeroElement /> */}
-              <div id="center">
+              <ThreeDHeroElement />
+              {/* <div id="center">
                 <div id="left">
                   <h3>
                     Xenx Technologies is a multi-disciplinary agency focused on
@@ -26,7 +27,7 @@ export function HeroSection(props: IAppProps) {
                     INSPIRE
                   </h1>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

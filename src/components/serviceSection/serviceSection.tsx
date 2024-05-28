@@ -61,7 +61,7 @@ export function ServiceSection() {
               <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-5">
                 Do You Want <br /> Something Different?
               </h1>
-              <GradientButton text="Contact Now!" path="/contact" />
+              <GradientButton text="Contact Now!" path="tel:+918766509387" />
             </div>
           </div>
         </div>

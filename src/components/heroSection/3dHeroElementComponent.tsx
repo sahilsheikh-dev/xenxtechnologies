@@ -15,7 +15,7 @@ export function ThreeDHeroElement() {
               text="Assist clients in generating significant revenue from websites!"
               highlightedText="Xenx Technologies"
             />
-            <GradientButton text="Contact Now!" path="/contact" />
+            <GradientButton text="Contact Now!" path="tel:+918766509387" />
           </>
         </CardItem>
       </CardBody>
