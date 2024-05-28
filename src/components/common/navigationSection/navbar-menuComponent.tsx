@@ -8,7 +8,7 @@ export function NavbarSection() {
     {
       title: "Home",
       url: "/",
-      path: "home",
+      path: "hero",
     },
     {
       title: "Work",
@@ -48,7 +48,18 @@ export function NavbarSection() {
       <nav className="px-6 py-3">
         <ul className="sidebar">
           <li onClick={hideSidebar}>
-            <a href="#">
+            <a
+              href="/"
+              onClick={(e) => {
+                let sectionName = document.getElementById("hero");
+                e.preventDefault();
+                sectionName &&
+                  sectionName.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="26"
@@ -80,7 +91,19 @@ export function NavbarSection() {
         </ul>
         <ul>
           <li>
-            <a className="text-xl" href="#">
+            <a
+              className="text-xl"
+              href="/"
+              onClick={(e) => {
+                let sectionName = document.getElementById("hero");
+                e.preventDefault();
+                sectionName &&
+                  sectionName.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+              }}
+            >
               Xenx Technologies
             </a>
           </li>

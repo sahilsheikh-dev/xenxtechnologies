@@ -5,7 +5,7 @@ export interface IAppProps {}
 
 export function HeroSection(props: IAppProps) {
   return (
-    <section className="">
+    <section className="hero">
       {/* <div className="header blob-hero"> */}
       <div className="header">
         {/* <div className="header__background"></div> */}
