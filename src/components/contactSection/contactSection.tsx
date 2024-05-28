@@ -44,10 +44,10 @@ export default function ContactSection() {
                       Phone number
                     </dt>
                     <a
-                      href="tel:+919321987429"
+                      href="tel:+918766509387"
                       className="mt-2 text-base text-gray-500 hover:text-red-700"
                     >
-                      +91 932 198 7429
+                      +91 876 650 9387
                     </a>
                   </div>
                 </div>

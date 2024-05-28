@@ -4,6 +4,7 @@ import "./globals.css";
 import { NavbarSection } from "@/components/common/navigationSection/navbar-menuComponent";
 import FooterSection from "@/components/common/footerSection/footerSection";
 import CursorComponent from "@/components/common/cursorComponent/cursorComponent";
+import ScrollToTop from "@/components/scrollToTopComponent/ScrollToTopComponent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <CursorComponent />
+        <ScrollToTop />
         <NavbarSection />
         {children}
         <FooterSection />

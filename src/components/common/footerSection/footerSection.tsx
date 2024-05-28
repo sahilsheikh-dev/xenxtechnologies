@@ -49,7 +49,7 @@ export default function FooterSection() {
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <a href="tel:+919321987429">+91 932 198 7429</a>
+                  <a href="tel:+918766509387">+91 876 650 9387</a>
                 </li>
                 <li className="flex items-center justify-center gap-2 lg:justify-start text-sm md:text-lg lg:text-lg xl:text-lg">
                   <svg

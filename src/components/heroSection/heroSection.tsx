@@ -6,20 +6,26 @@ export interface IAppProps {}
 export function HeroSection(props: IAppProps) {
   return (
     <section className="">
-      <div className="header">
+      <div className="header blob-hero">
         <div className="header__background"></div>
-        <div className="px-6 text-center lg:text-left mx-auto">
+        <div className="px-6 lg:text-left mx-auto w-screen">
           <div className="w-100 mx-auto">
-            <div className="grid items-center gap-12 lg:grid-cols-1 mx-auto">
-              <div className="lg:mb-0 mx-auto">
-                {/* <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-7xl custom-in">
-                  Assist clients in generating significant revenue from
-                  websites!
-                </h1>
-                <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-7xl text-red-700 font-bold py-5 custom-in">
-                  Xenx Technologies
-                </h1> */}
-                <ThreeDHeroElement />
+            <div className="lg:mb-0 mx-auto">
+              {/* <ThreeDHeroElement /> */}
+              <div id="center">
+                <div id="left">
+                  <h3>
+                    Xenx Technologies is a multi-disciplinary agency focused on
+                    creating unique, end-to-end software solutions.
+                  </h3>
+                </div>
+                <div id="right">
+                  <h1>
+                    SOFTWARE <br />
+                    THAT <br />
+                    INSPIRE
+                  </h1>
+                </div>
               </div>
             </div>
           </div>

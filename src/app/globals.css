@@ -11,9 +11,18 @@
 }
 
 body {
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, BlinkMacSystemFont, Helvetica, sans-serif;
+  transition: all 0.25s linear;
+  scroll-behavior: smooth;
   background-color: #010101;
   color: #fafafa;
-  /* cursor: none; */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -24,6 +33,59 @@ button {
   cursor: none;
 }
 
+#center {
+  height: 65vh;
+  width: 100%;
+  /* background-color: orange; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 2.5vw;
+}
+
+#center h1 {
+  font-size: 10vw;
+  text-align: right;
+  line-height: 8vw;
+  font-weight: bold;
+}
+
+#left h3 {
+  width: 25vw;
+  font-size: 1.8vw;
+  line-height: 2vw;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  #center {
+    height: 62vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding: 7vw 5vw;
+    padding-bottom: 10vw;
+    flex-direction: column-reverse;
+    position: relative;
+    z-index: 9;
+  }
+
+  #center h1 {
+    font-size: 13vw;
+    text-align: right;
+    line-height: 15vw;
+  }
+
+  #left h3 {
+    width: 80%;
+    font-size: 5.5vw;
+    line-height: 6vw;
+  }
+}
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -31,6 +93,13 @@ button {
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.blob-hero {
+  background-image: url("../assets//svg/blob-haikei.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bg-wave-svg-down {
