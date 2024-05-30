@@ -96,20 +96,20 @@ button {
 }
 
 .blob-hero {
-  background-image: url("../assets//svg/blob-haikei.svg");
+  background-image: url("./assets//svg/blob-haikei.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg-wave-svg-down {
-  background-image: url("../assets//svg//wave-down.svg");
+  background-image: url("./assets//svg//wave-down.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg-wave-svg-up {
-  background-image: url("../assets//svg//wave-up.svg");
+  background-image: url("./assets//svg//wave-up.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -21,7 +21,7 @@ const ThreeDServiceCard = ({ title, imgUrl, description, price }: any) => {
         <CardItem translateZ="50" className="text-3xl font-bold text-left">
           {title}
         </CardItem>
-        <CardItem
+        {/* <CardItem
           translateZ="60"
           className="text-sm text-neutral-500 mt-2 mb-4 text-left"
         >
@@ -29,7 +29,7 @@ const ThreeDServiceCard = ({ title, imgUrl, description, price }: any) => {
           <span className="text-3xl font-bold text-red-700 text-left">
             ₹{price}/-
           </span>
-        </CardItem>
+        </CardItem> */}
         <CardItem
           as="p"
           translateZ="60"

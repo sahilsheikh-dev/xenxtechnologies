@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Label } from "./contact-form-label";
 import { Input } from "./contact-form-input";
-import { cn } from "@/utils/cn";
+import { cn } from "@/app/utils/cn";
 import { InputTextArea } from "./contact-form-textarea";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

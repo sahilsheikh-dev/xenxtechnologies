@@ -30,6 +30,33 @@ export default function TestimonialCardComponent() {
       review:
         "Amazing job on our 3D website. Your work, dedication, creativity, and execution exceeded expectations. Thank you for your invaluable contribution.",
     },
+    {
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-8cdcf.appspot.com/o/testimonials%2Fuser-icon.png?alt=media&token=bcc4e6a7-8a5f-4504-b69e-75a359a4ac26",
+      clientName: "Sarah Lee",
+      position: "Marketing Manager",
+      company: "",
+      review:
+        "Hey Team Xenx, Wow! The 3D animated website you developed for Radiant Digital Solutions is simply breathtaking. It perfectly captures the essence of our cutting-edge technology. Great job!",
+    },
+    {
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-8cdcf.appspot.com/o/testimonials%2Fuser-icon.png?alt=media&token=bcc4e6a7-8a5f-4504-b69e-75a359a4ac26",
+      clientName: "Michael Brown",
+      position: "Owner",
+      company: "",
+      review:
+        "Thanks Sahil, I'm blown away by the 3D animated website you created for EcoTech Ventures. The attention to detail and the realistic representations of our products are truly impressive. Great work!",
+    },
+    {
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-8cdcf.appspot.com/o/testimonials%2Fuser-icon.png?alt=media&token=bcc4e6a7-8a5f-4504-b69e-75a359a4ac26",
+      clientName: "Robert Anderson",
+      position: "Project Manager",
+      company: "",
+      review:
+        "Hey Sahil, I'm extremely pleased with the 3D animated website you created for Prismatic Web Design. The attention to detail and the realistic animations are truly remarkable. Thanks for the fantastic work!",
+    },
   ];
 
   return (

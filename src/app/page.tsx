@@ -1,4 +1,4 @@
-import Homepage from "@/screens/Homepage";
+import Homepage from "@/app/screens/Homepage";
 
 export default function Home() {
   return (

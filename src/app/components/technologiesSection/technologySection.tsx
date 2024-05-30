@@ -4,7 +4,7 @@ import { TechnologyCardComponent } from "./technologyCardComponent";
 export function TechnologySection() {
   return (
     <>
-      <div className="text-center lg:text-left mb-28 pb-5 bg-wave-svg-up">
+      <div className="text-center lg:text-left mb-28">
         <div className="text-center">
           <div
             className="lg:mt-0 mx-auto"

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { NavbarSection } from "@/components/common/navigationSection/navbar-menuComponent";
-import FooterSection from "@/components/common/footerSection/footerSection";
-import CursorComponent from "@/components/common/cursorComponent/cursorComponent";
-import ScrollToTop from "@/components/scrollToTopComponent/ScrollToTopComponent";
+import { NavbarSection } from "@/app/components/common/navigationSection/navbar-menuComponent";
+import FooterSection from "@/app/components/common/footerSection/footerSection";
+import CursorComponent from "@/app/components/common/cursorComponent/cursorComponent";
+import ScrollToTop from "@/app/components/scrollToTopComponent/ScrollToTopComponent";
 
 const inter = Inter({ subsets: ["latin"] });
 

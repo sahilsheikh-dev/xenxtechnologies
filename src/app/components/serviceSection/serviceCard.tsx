@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/utils/cn";
+import { cn } from "@/app/utils/cn";
 import React, {
   createContext,
   useState,
@@ -48,11 +48,12 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "py-20 flex items-center justify-center",
+          "flex items-center justify-center mx-auto",
           containerClassName
         )}
         style={{
           perspective: "1000px",
+          maxWidth: "95%",
         }}
       >
         <div
@@ -85,9 +86,10 @@ export const CardBody = ({
   return (
     <div
       className={cn(
-        "h-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+        "[transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
       )}
+      style={{ width: "95%", minHeight: "300px" }}
     >
       {children}
     </div>
@@ -136,7 +138,7 @@ export const CardItem = ({
   return (
     <Tag
       ref={ref}
-      className={cn("w-fit transition duration-200 ease-linear", className)}
+      className={cn("transition duration-200 ease-linear", className)}
       {...rest}
     >
       {children}

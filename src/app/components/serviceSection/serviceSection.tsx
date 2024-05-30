@@ -7,6 +7,39 @@ import ecommerceSolutionIcon from "../../assets/images/service/service-img4.png"
 import GradientButton from "../common/buttonComponents/gradient-button";
 
 export function ServiceSection() {
+  const services = [
+    {
+      title: "Web Development",
+      imgUrl: webDevelopmentIcon,
+      description:
+        "Resolve business challenges and thrive in the digital landscape with our custom web development services.",
+      price: "14,999",
+    },
+    {
+      title: "Mobile Development",
+      imgUrl: mobileDevelopmentIcon,
+      description:
+        "Transform your vision into reality with our native Android and iOS app development services.",
+      price: "19,999",
+    },
+
+    {
+      title: "UI UX Design",
+      imgUrl: uiuxDesignIcon,
+      description:
+        "Create delightful experiences and boost user engagement with our design solutions driven by our team.",
+      price: "6,999",
+    },
+
+    {
+      title: "ECommerce Solutions",
+      imgUrl: ecommerceSolutionIcon,
+      description:
+        "Created e-commerce platform with payment gateways, inventory management, and more.",
+      price: "19,999",
+    },
+  ];
+
   return (
     <>
       <div id="services" className="text-center lg:text-left mb-24">
@@ -25,38 +58,18 @@ export function ServiceSection() {
                 </p>
               </div>
             </div>
-            <div className="lg:mb-0">
-              <ThreeDServiceCard
-                title="Web Development"
-                imgUrl={webDevelopmentIcon}
-                description="Resolve business challenges and thrive in the digital landscape with our custom web development services."
-                price="14,999"
-              />
-            </div>
-            <div className="lg:mb-0">
-              <ThreeDServiceCard
-                title="Mobile Development"
-                imgUrl={mobileDevelopmentIcon}
-                description="Transform your vision into reality with our native Android and iOS app development services."
-                price="19,999"
-              />
-            </div>
-            <div className="lg:mb-0">
-              <ThreeDServiceCard
-                title="UI UX Design"
-                imgUrl={uiuxDesignIcon}
-                description="Create delightful experiences and boost user engagement with our design solutions driven by our team."
-                price="6,999"
-              />
-            </div>
-            <div className="lg:mb-0">
-              <ThreeDServiceCard
-                title="ECommerce Solutions"
-                imgUrl={ecommerceSolutionIcon}
-                description="Created e-commerce platform with payment gateways, inventory management, and more."
-                price="19,999"
-              />
-            </div>
+
+            {services?.map((serviceItem, key) => (
+              <div className="lg:mb-0" key={key}>
+                <ThreeDServiceCard
+                  title={serviceItem.title}
+                  imgUrl={serviceItem.imgUrl}
+                  description={serviceItem.description}
+                  price={serviceItem.price}
+                />
+              </div>
+            ))}
+
             <div className="lg:mb-0 text-center">
               <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-5">
                 Do You Want <br /> Something Different?
