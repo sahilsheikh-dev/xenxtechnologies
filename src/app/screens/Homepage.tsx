@@ -7,6 +7,7 @@ import { ServiceSection } from "@/app/components/serviceSection/serviceSection";
 import { TechnologySection } from "@/app/components/technologiesSection/technologySection";
 import { TestimonialSection } from "@/app/components/testimonialSection/testimonialSection";
 import * as React from "react";
+import TeamSection from "../components/teamSection/teamSection";
 
 export default function Homepage(props: any) {
   return (
@@ -17,6 +18,7 @@ export default function Homepage(props: any) {
       <ServiceSection />
       <ProjectSection />
       <TestimonialSection />
+      <TeamSection />
       <ContactSection />
     </>
   );

@@ -7,6 +7,7 @@ const nextConfig = {
       "assets.aceternity.com",
       "xenxtechnologies.netlify.app",
       "images.pexels.com",
+      "drive.google.com",
     ],
   },
 };
