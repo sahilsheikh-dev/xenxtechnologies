@@ -19,8 +19,8 @@ export default function TeamSectionCardComponent() {
     {
       imageUrl:
         "https://drive.google.com/thumbnail?id=1ZJiU_KULNgYeat1fUFWXDZYia_p5txlM",
-      name: "Muhammad Shoheb Sheikh",
-      position: "Business Analytics",
+      name: "Mohamad Shoheb Mohamad Nasir",
+      position: "Business Analytics/Business Development Manager (BDM)",
     },
   ];
   return (
